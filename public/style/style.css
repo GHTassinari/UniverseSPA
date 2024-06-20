@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: url("../assets/background-home.png") lightgray 50% / cover
+    no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+#project,
+#menu,
+#app,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 6.4rem;
+}
+
+#app {
+  color: white;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+
+  padding: 4rem 0 4rem 7.2rem;
+  align-items: center;
+}
+
+#menu nav {
+  display: flex;
+  margin-left: 4.2rem;
+  gap: 5.4rem;
+}
+
+#menu nav a {
+  color: #c4c4cc;
+  text-decoration: none;
+
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#app.transition {
+  transition: opacity 1s ease-in-out;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 58.8rem;
+}
+
+#centerOfThePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#app button {
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem;
+
+  color: var(--Neutral-Colors-White, #fff);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#app button:hover {
+  transform: scale(1.1);
+}
+
+/* 404 */
+
+#app h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 125%;
+}
+
+#app h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+#app.appUniverse,
+#app.appExploration {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 100%;
+  width: 100%;
+
+  padding: 6.4rem 0 0 10.2rem;
+
+  color: #e1e1e6;
+}
+
+#app.appUniverse p.textUniverse,
+#app.appExploration p.textExploration {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+
+  color: #e1e1e6;
+  width: 64.8rem;
+
+  margin-top: 1.6rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  #menu img {
+    display: none;
+  }
+
+  #menu nav {
+    align-items: flex-start;
+    margin-left: 0;
+    gap: 4rem;
+    width: 100%;
+  }
+
+  #menu nav a {
+    font-size: 1.8rem;
+  }
+
+  #app {
+    padding: 2rem;
+    height: auto;
+  }
+
+  #app button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  #app.appUniverse,
+  #app.appExploration {
+    padding: 2rem;
+  }
+
+  #app.appUniverse p.textUniverse,
+  #app.appExploration p.textExploration {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  #menu {
+    padding: 3rem 0 3rem 5rem;
+  }
+
+  #menu nav {
+    margin-left: 2rem;
+    gap: 3rem;
+  }
+
+  #menu nav a {
+    font-size: 2rem;
+  }
+
+  #app {
+    padding: 4rem;
+    height: auto;
+  }
+
+  #app button {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.8rem;
+  }
+
+  #app.appUniverse,
+  #app.appExploration {
+    padding: 2rem;
+  }
+
+  #app.appUniverse p.textUniverse,
+  #app.appExploration p.textExploration {
+    width: 70%;
+  }
+
+  #app.appHome {
+    height: 48rem;
+  }
+}
