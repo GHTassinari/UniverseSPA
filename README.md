@@ -6,4 +6,4 @@ The main file, index.html, serves as the entry point of the application. It incl
 
 The application's content is dynamically loaded into the div with the id app. This approach allows for a seamless user experience, with no page reloads as the user navigates through the application.
 
-![project-gif](./.github/gif.gif)
+Node.js Serverless Function wasn't done in this project, but it is functional in local.
